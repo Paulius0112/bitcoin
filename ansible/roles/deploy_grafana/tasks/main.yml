@@ -13,14 +13,14 @@
   copy:
     src: 'datasources/promotheus_datasource.yml'
     dest: /home/bitcoin/grafana-conf/datasources/datasource.yml
-- name: Copy Grafana providers
-  copy:
-    src: 'dashboards/dashboard.yml'
-    dest: /home/bitcoin/grafana-conf/dashboards/dashboard.yml
-- name: Copy Grafana dashboard
-  copy:
-    src: 'dashboards/bitcoin-grafana.json'
-    dest: /home/bitcoin/grafana-conf/dashboards/bitcoin-grafana.json
+#- name: Copy Grafana providers
+#  copy:
+#    src: 'dashboards/dashboard.yml'
+#    dest: /home/bitcoin/grafana-conf/dashboards/dashboard.yml
+#- name: Copy Grafana dashboard
+#  copy:
+#    src: 'dashboards/bitcoin-grafana.json'
+#    dest: /home/bitcoin/grafana-conf/dashboards/bitcoin-grafana.json
 - name: run Grafana container
   docker_container:
     name: grafana

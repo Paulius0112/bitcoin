@@ -1,5 +1,5 @@
 [monitoring]
-139.162.248.216 ansible_user=root
+212.111.40.75 ansible_user=root
 
 [node]
-139.162.248.190 ansible_user=root
+212.111.40.66 ansible_user=root
