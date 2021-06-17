@@ -12,3 +12,23 @@ variable "linode_token" {
   type        = string
   description = "Your Linode Personal Access Token"
 }
+
+variable "gcp_project_id" {
+  type        = string
+  description = "ID of Google Cloud Provider project"
+}
+
+variable "gcp_credentials_file" {
+  type        = string
+  description = "File path of GCP Service Account credentials"
+}
+
+variable "gcp_region" {
+  type        = string
+  description = "ID of GCP region"
+}
+
+variable "gcp_zone" {
+  type        = string
+  description = "ID of GCP zone"
+}

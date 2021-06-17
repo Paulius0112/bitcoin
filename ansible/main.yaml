@@ -27,8 +27,8 @@
     - deploy_agent
   vars:
     SYNTROPY_API_KEY: "{{ SYNTROPY_API_KEY }}"
-    SYNTROPY_AGENT_NAME: "{{ SYNTROPY_AGENT_NAME_NODE  }}"   
-    SYNTROPY_PROVIDER: "{{ SYNTROPY_PROVIDER_NODE  }}"
+    SYNTROPY_AGENT_NAME: "bitcoin_node"   
+    SYNTROPY_PROVIDER: "16"
   vars_files:
     - vars/main.yml
 
@@ -40,8 +40,8 @@
     - deploy_agent
   vars:
     SYNTROPY_API_KEY: "{{ SYNTROPY_API_KEY_ }}"
-    SYNTROPY_AGENT_NAME: "{{ SYNTROPY_AGENT_NAME_M  }}"   
-    SYNTROPY_PROVIDER: "{{ SYNTROPY_PROVIDER_M  }}"
+    SYNTROPY_AGENT_NAME: "monitoring_node"   
+    SYNTROPY_PROVIDER: "3"
   vars_files:
     - vars/main.yml
 
